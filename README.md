@@ -1,4 +1,7 @@
-Politica sulla privacy
+EV3StonengControl
+
+
+Privacy Policy for Google Play 
 1. Il termine "informazioni personali" come qui utilizzato è definito come qualsiasi informazione che identifica o può essere utilizzata per identificare, contattare o cercare la persona a cui tali informazioni si riferiscono. Le informazioni personali che raccogliamo saranno soggette a questa politica sulla privacy, come modificata di volta in volta.
 
 2. Non chiediamo il tuo indirizzo email, numero di telefono o qualsiasi informazione su di te.
