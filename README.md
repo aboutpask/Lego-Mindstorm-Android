@@ -1,5 +1,6 @@
 EV3StonengControl
 
+url: https://play.google.com/store/apps/details?id=com.legostoneng.app.ev3stoneng
 
 Privacy Policy for Google Play 
 1. Il termine "informazioni personali" come qui utilizzato è definito come qualsiasi informazione che identifica o può essere utilizzata per identificare, contattare o cercare la persona a cui tali informazioni si riferiscono. Le informazioni personali che raccogliamo saranno soggette a questa politica sulla privacy, come modificata di volta in volta.
