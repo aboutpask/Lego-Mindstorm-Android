@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait"
+    android:theme="@style/ThemeOverlay.AppCompat"
+    tools:context=".ManualActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/GuideToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/greyToolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/manual_toolbar_title"
+            style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/manual_title"
+            android:textColor="@color/colorWhite"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="15dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/buttonManual1"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/buttonmanual_placeholder"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/greyButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonManual2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GuideToolbar" />
+    
+    <Button
+        android:id="@+id/buttonManual2"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonmanual_placeholder"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/greyButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonManual3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonManual1" />
+    
+    <Button
+        android:id="@+id/buttonManual3"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonmanual_placeholder"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/greyButton"
+        app:layout_constraintBottom_toTopOf="@+id/buttonManual4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonManual2" />
+    
+    <Button
+        android:id="@+id/buttonManual4"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonmanual_placeholder"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@color/greyButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonManual3" />
+
+</android.support.constraint.ConstraintLayout>

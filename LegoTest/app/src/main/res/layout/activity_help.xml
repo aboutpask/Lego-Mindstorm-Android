@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait"
+    android:theme="@style/ThemeOverlay.AppCompat"
+    tools:context=".HelpActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/helpToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/greyToolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/help_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_title"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/buttonFAQ4"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:background="@color/greyButton"
+        android:text="@string/credits"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFAQ3" />
+
+    <Button
+        android:id="@+id/buttonFAQ3"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:background="@color/greyButton"
+        android:text="@string/contacts"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFAQ4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFAQ2" />
+
+    <Button
+        android:id="@+id/buttonFAQ2"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:background="@color/greyButton"
+        android:text="@string/manual"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFAQ3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFAQ1" />
+
+    <Button
+        android:id="@+id/buttonFAQ1"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/greyButton"
+        android:text="@string/faqs"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFAQ2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpToolbar" />
+
+</android.support.constraint.ConstraintLayout>

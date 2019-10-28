@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonBluetoothConnect"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@color/colourDisconnect"
+        android:text="@string/connect"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBluetoothDisconnect"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:background="@color/colourDisconnect"
+        android:text="@string/disconnect"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/help_button"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="166dp"
+        android:background="#008eb6f6"
+        android:contentDescription="@string/help_section"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBluetoothDisconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toEndOf="@+id/manual_button"
+        app:srcCompat="@mipmap/faq_icon" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="#008eb6f6"
+        android:contentDescription="@string/settings_section"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBluetoothDisconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toEndOf="@+id/automaticmode"
+        app:srcCompat="@mipmap/setting0" />
+
+    <ImageButton
+        android:id="@+id/manual_button"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="139dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="168dp"
+        android:background="#008eb6f6"
+        android:contentDescription="@string/test_sections"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBluetoothDisconnect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/drive_icon" />
+
+    <ImageButton
+        android:id="@+id/automaticmode"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="144dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        android:background="#008eb6f6"
+        android:contentDescription="@string/automatic_section"
+        android:src="@mipmap/action_robot"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBluetoothDisconnect"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/statusBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:text="@string/disconnected"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/osfirmware"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toEndOf="@+id/statusBattery"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo_stoneng" />
+
+    <TextView
+        android:id="@+id/manual_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/manual_test"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/manual_button"
+        app:layout_constraintEnd_toEndOf="@+id/manual_button"
+        app:layout_constraintStart_toStartOf="@+id/manual_button" />
+
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/manual_help"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/help_button"
+        app:layout_constraintEnd_toEndOf="@+id/help_button"
+        app:layout_constraintStart_toStartOf="@+id/help_button" />
+
+    <TextView
+        android:id="@+id/automaticmode_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/manual_advanced_actions"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/automaticmode"
+        app:layout_constraintEnd_toEndOf="@+id/automaticmode"
+        app:layout_constraintStart_toStartOf="@+id/automaticmode" />
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/manual_settings"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_button"
+        app:layout_constraintEnd_toEndOf="@+id/settings_button"
+        app:layout_constraintStart_toStartOf="@+id/settings_button" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
