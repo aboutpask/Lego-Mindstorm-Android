@@ -22,6 +22,3 @@ Autorizzazioni richieste:
 1. Accesso al microfono per il controllo vocale.
 
 2. Accesso al bluetooth per abilitare il controllo del robot.
-
-Contattaci
-e-mail: passpolo00@gmail.com
